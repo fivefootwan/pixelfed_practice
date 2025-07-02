@@ -14,8 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(209, 177, 134);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +23,87 @@
   color: white;
 }
 
+.App-header h1 {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Navigation-Menu {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Cards {
+  background-color: antiquewhite;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: stretch;
+  padding-right: 30%;
+  padding-left: 30%;
+  padding-top: 2.5%;
+  padding-bottom: 5%;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.Card {
+  background-color: rgb(239, 214, 182);
+  box-sizing: border-box;
+  padding: 2% 5%;
+  border: 0.5px solid rgb(209, 177, 134);
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgb(09, 09, 09, 0.2),
+  inset 0 -20px 20px rgb(209, 177, 134);
+  margin: 1% 0;
+  transition: transform 0.9s ease;
+  aspect-ratio: 1 / 1; 
+  display: block;
+}
+
+.Card img {
+  margin: 2% 0;
+  width: 100%;         /* or any % or px */
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.Card:hover {
+  background-color: rgb(209, 177, 134);
+  transform: translateY(-5px);
+}
+
+.Card p {
+  margin: 0;
+  text-align: left;
+}
+
+.Username {
+  padding-top: 2%;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Post-Details {
+  display: flex;
+  gap: 5px;
+  align-items: center ;
+  justify-content: flex-start;
+  padding-bottom: 2%;
+  letter-spacing: 0.1px;
+}
+
+.Post-Details p {
+  font-size: 14px;
+  margin: 0;
 }
