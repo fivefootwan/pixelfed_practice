@@ -3,6 +3,7 @@ import './App.css';
 import { Routes, Route, Link, useNavigate } from 'react-router-dom';
 import AboutPage from './AboutPage';
 import HomePage from './HomePage';
+import UserPage from './UserPage';
 
 
 function App() {
@@ -10,14 +11,15 @@ function App() {
     <div className="App">
 
       <header className="App-header">
-        <h1>
+        <Link to='/' className='HomePage-Logo'><h1>
           Social Media Page
         </h1>
+        </Link>
 
         <div className='Navigation-Menu'>
-          <Link to='/'><p>Homepage</p></Link>
+          <Link to='/' className='Nav-Item'><p>Homepage</p></Link>
           <p>||</p>
-          <Link to='/aboutPage'><p>About Page</p></Link>
+          <Link to='/aboutPage' className='Nav-Item' ><p>About Page</p></Link>
         </div>
 
       </header>
@@ -25,6 +27,7 @@ function App() {
       <Routes>
         <Route path='/' element= {<HomePage />}/>
         <Route path='/aboutPage' element={<AboutPage />} />
+        <Route path='/userPage' element={<UserPage />}/>
       </Routes>
 
     </div>
