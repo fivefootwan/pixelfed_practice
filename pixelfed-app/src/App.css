@@ -64,7 +64,7 @@
   box-shadow: 0 10px 15px rgb(09, 09, 09, 0.2),
   inset 0 -20px 20px rgb(209, 177, 134, 0.8);
   margin: 1% 0;
-  transition: transform 0.9s ease;
+  transition: transform 0.3s ease;
   aspect-ratio: 1 / 1; 
   display: block;
 }
@@ -74,7 +74,7 @@
   width: 100%;         /* or any % or px */
   aspect-ratio: 1 / 1;
   object-fit: contain;
-  border-radius: 10px;
+  border-radius: 20px;
   text-align: center;
 }
 
